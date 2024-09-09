@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home Pages</title>
-     <script type="text/javascript" src="{{ url_for('static', filename = 'scripts.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Cookie</title>
 </head>
 <body>
-     <input type="button" onclick="say_hallo()" value="say nadzib suhu"/>
+    <form action="/setcookies" method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit" value="login">Set Cookie</button>
+    </form>
 </body>
 </html>
